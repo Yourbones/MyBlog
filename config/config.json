@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "PAY_APPID": "wx329f5c062d0b7c7a",
+    "BASE_URL": "http://mall-h5-qafc.natapp.touchealth.com",
+    "API_URL": "http://gateway.natapp.touchealth.com"
+  },
+  "test": {
+    "PAY_APPID": "wx329f5c062d0b7c7a",
+    "BASE_URL": "http://mall-h5-qafc.natapp.touchealth.com",
+    "API_URL": "http://gateway.natapp.touchealth.com"
+  },
+  "pre": {
+    "PAY_APPID": "wx14104f2209c39d79",
+    "BASE_URL": "http://mall-h5-pre.touchealth.com",
+    "API_URL": "http://gatewayuat-pre.touchealth.com"
+  },
+  "prod": {
+    "PAY_APPID": "wxa926b17206e9b679",
+    "BASE_URL": "https://mall-h5-online.touchealth.com",
+    "API_URL": "https://gateway-prod.touchealth.com"
+  }
+}
