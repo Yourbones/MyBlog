@@ -1,37 +1,51 @@
 <template>
   <div class="banner">
-    <p class="motto">{{ motto }}</p>
+    <img :src="imgUrl" alt="头图" />
+    <div class="banner-title">
+      <h1>{{ text }}</h1>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'banner',
-  props: ['motto', 'bannerImg'],
+  props: {
+    imgUrl: {
+      type: String,
+      default: '',
+    },
+    text: {
+      type: String,
+      default: '',
+    },
+  },
   data() {
-    return {
-      img: require('../../static/banner.jpg'),
-    }
+    return {}
   },
 }
 </script>
 
 <style scoped lang="scss">
 .banner {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 900px;
-  background: url('../../static/banner.jpg') no-repeat center center;
-  background-size: cover;
-  .motto {
-    position: relative;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 65vh;
+  }
+  .banner-title {
+    position: absolute;
     top: 40%;
-    margin: 0 auto;
-    font-size: 50px;
-    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     color: #fff;
+    h1 {
+      margin-bottom: 20px;
+    }
   }
 }
 </style>
