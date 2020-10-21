@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import http from './http'
+import './static/js/iconfont'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = http
@@ -10,5 +11,5 @@ Vue.prototype.$http = http
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
 }).$mount('#app')
